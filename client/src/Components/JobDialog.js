@@ -75,6 +75,7 @@ class MaxWidthDialog extends React.Component {
             How to apply:
             <div className="content" dangerouslySetInnerHTML={{__html: this.props.jobInfo.how_to_apply}}></div>
             </DialogContentText>
+            
           </DialogContent>
           <DialogActions>
             <Grid container spacing={6}>
@@ -95,6 +96,10 @@ class MaxWidthDialog extends React.Component {
                 <Button onClick={this.handleClose} color="primary">
                   Close
                 </Button>
+
+
+
+
               </Grid>
               
               

@@ -5,7 +5,7 @@ export default {
     getJobs: function(q) {
       // console.log(q);
       // console.log(loc);
-      return (axios.get(`http://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=${q.search}&location=${q.location}`));
+      return (axios.get(`https://quiet-badlands-79780.herokuapp.com/https://jobs.github.com/positions.json?description=${q.search}&location=${q.location}`));
 
     },
     // Gets all saved jobs
