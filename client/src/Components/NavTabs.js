@@ -74,8 +74,9 @@ class NavTabs extends React.Component {
             <Tabs position="fixed" variant="fullWidth" value={value} onChange={this.handleChange}>
               <img   position="fixed" width="16%" src={logo} href="../pages/Search"/> 
               <LinkTab  position="fixed" label="Search" href="../pages/Search" />
-              <LinkTab  position="fixed" label="My Resumes" href="../pages/MyResumes" />
               <LinkTab  position="fixed" label="Saved" href="../SavedJobs" />
+              <LinkTab  position="fixed" label="Resumes" href="../pages/MyResumes" />
+              
               {/* <LinkTab  position="fixed" label="Profile" href="../pages/Profile" /> */}
               <LinkTab position="fixed" label="Logout" href="Logout" />
         
@@ -84,9 +85,9 @@ class NavTabs extends React.Component {
         
           {value === 0 && <TabContainer> <img/></TabContainer>}
           {value === 1 && <TabContainer> <SearchPage /></TabContainer>}
-     
-          {value === 2 && <TabContainer> <ResumesPage user = {this.props.user} /></TabContainer>}
-          {value === 3 && <TabContainer> <SavedJobs user ={this.props.user} /> </TabContainer>}
+          {value === 2 && <TabContainer> <SavedJobs user ={this.props.user} /> </TabContainer>}
+          {value === 3 && <TabContainer> <ResumesPage user = {this.props.user} /></TabContainer>}
+          
           {/* {value === 4 && <TabContainer><Profile user ={this.props.user} /> </TabContainer>} */}
           {/* {value === 4 && <TabContainer>Edit Profile </TabContainer>} */}
           {value === 4 && <TabContainer><Logout logoutHandler={this.props.logoutHandler} /></TabContainer>}

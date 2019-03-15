@@ -23,7 +23,7 @@ const styles = theme => ({
     margin: '0 auto',
     padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`,
   },
-  heroButtons: {
+  heroButtons: { 
     marginTop: theme.spacing.unit * 4,
   },
   layout: {
