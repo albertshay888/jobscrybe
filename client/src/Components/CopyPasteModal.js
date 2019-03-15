@@ -13,8 +13,8 @@ import '../App.css';
 
 
 function getModalStyle() {
-  const top = 50;
-  const left = 50;
+  const top = 20;
+  const left = 20;
 
   return {
     top: `${top}%`,
@@ -26,7 +26,7 @@ function getModalStyle() {
 const styles = theme => ({
   paper: {
     position: 'absolute',
-    width: theme.spacing.unit * 75,
+    width: theme.spacing.unit * 50,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
     padding: theme.spacing.unit * 4,
@@ -115,7 +115,7 @@ class CopyPasteModal extends React.Component {
             <Grid container spacing={8} alignItems="flex-end" >
               <Grid item sm={12}>
                 <FormControl>
-                  <InputLabel htmlFor="title">Title</InputLabel>
+                  <InputLabel htmlFor="title">Title or Company</InputLabel>
                   <Input fullWidth value={this.state.title} onChange = { this.handleInputChange } id="title" name="title" />
                 </FormControl>
               </Grid>
@@ -128,16 +128,18 @@ class CopyPasteModal extends React.Component {
 
               <Grid item md={12}>
                 <form>
-                  <Typography component="label" variant="h6" align="center" >
+                  <Typography component="label" variant="h7" align="center" >
                     Copy / Paste your resume here
                   </Typography>
-                  <textarea name="resumeBody" rows="20" cols="50" value={this.state.resumeBody} onChange={this.handleInputChange} >
+                  <textarea name="resumeBody" rows="20" cols="31" value={this.state.resumeBody} onChange={this.handleInputChange} >
+                 
                   </textarea>
                 </form>
               </Grid>
 
               <Grid item md={12}>
                 <Button
+                  
                   variant="outlined"
                   color="primary"
                   fullWidth

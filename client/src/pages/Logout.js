@@ -19,12 +19,8 @@ class Logout extends Component {
     render(){
         return (
             <div>
-              <h1>Thank you for your patronage</h1>
-              <h1>
-                  <span role="img" aria-label="Face With Rolling Eyes Emoji">
-                      🐔
-                  </span>
-              </h1>
+              <h1>Thanks for using jobscrybe!</h1>
+             
             </div>
                
         );
