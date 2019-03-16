@@ -4,6 +4,6 @@ Jobscrybe is a single page web application that allows users to search for jobs 
 
 ## TEAM:
   - __Product Owner__:  Albert Shay
-  - __Development Team Members__:  Isreal P. Buenrostro, Nick Morales
+  - __Development Team Members__:  Nick Morales, Isreal Buenrostro
 
 
