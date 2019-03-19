@@ -5,8 +5,9 @@ export default {
     getJobs: function(q) {
       // console.log(q);
       // console.log(loc);
-      return (axios.get(`https://quiet-badlands-79780.herokuapp.com/https://jobs.github.com/positions.json?description=${q.search}&location=${q.location}`));
-
+      return (axios.get(`https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=${q.search}&location=${q.location}`));
+      //** use the code below when pushing to heroku */
+      // return (axios.get(`https://quiet-badlands-79780.herokuapp.com/https://jobs.github.com/positions.json?description=${q.search}&location=${q.location}`));
     },
     // Gets all saved jobs
     getSavedJobs: function() {
@@ -44,7 +45,8 @@ export default {
   
     calculateAlgo: function(data){
       console.log('running algorithm');
-      console.log(data)
+      console.log(data.target);
+
 
 
       return axios.post("/api/algo/", data)

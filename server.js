@@ -4,6 +4,8 @@ const router = require("express").Router();
 const userController = require("./controllers/userController")
 const logger = require("morgan");
 const passport = require("passport");
+// const routes = require("./routes");
+
 
 const port  = process.env.PORT || 3001;
 
@@ -12,7 +14,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/jobscrybe_testO
 require('./config/passport')(passport);
 
 // MongoClient.connect({ useNewUrlParser: true })
-
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -26,8 +27,13 @@ if (process.env.NODE_ENV === "production") {
 }
 
 
-// API routes
+
+// Add routes, both API and view  
+// app.use(routes);
 const routes = require("./routes")(app, passport)
+// API routes
+// const routes = require("./routes")
+// (app, passport)
 
 
 
