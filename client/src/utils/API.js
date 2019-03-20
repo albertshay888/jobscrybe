@@ -45,7 +45,8 @@ export default {
   
     calculateAlgo: function(data){
       console.log('running algorithm');
-      console.log(data.target);
+      console.log(data.resumeBody);
+      console.log(data.jobDescription);
 
 
 

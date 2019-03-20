@@ -47,10 +47,15 @@ class SimpleSelect extends React.Component {
   calculateAlgo = () => {
     let resumeBody = this.state.selected.body;
     let jobDescription = this.props.jobInfo.description;
-    console.log(resumeBody)
-    console.log(jobDescription)
 
-    API.calculateAlgo(resumeBody, jobDescription).then(resp=>{
+    let algoData = {
+      resumeBody: resumeBody,
+      jobDescription: jobDescription
+    }
+
+    console.log(algoData)
+
+    API.calculateAlgo(algoData).then(resp=>{
       console.log()
 
 
