@@ -55,15 +55,8 @@ class SimpleSelect extends React.Component {
 
     console.log(algoData)
 
-    API.calculateAlgo(algoData).then(resp=>{
-      console.log()
-
-
-
-              //  html: this.props.jobInfo.description
-              // this.state.resumeBody,
-
-      //this is where the algorithm will return its calculations
+    API.calculateAlgo(algoData, resp=>{
+      console.log(resp)
     })
   }
 
