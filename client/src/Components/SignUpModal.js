@@ -32,16 +32,16 @@ const styles = theme => ({
       width: 400,
       marginLeft: 'auto',
       marginRight: 'auto',
-    },
+    }, 
   },
   paper: {
     position: 'absolute',
-    width: theme.spacing.unit * 75,
+    width: theme.spacing.unit * 50,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
     // padding: theme.spacing.unit * 4,
     outline: 'none',
-    marginTop: theme.spacing.unit * 8,
+    marginTop: theme.spacing.unit * 4,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -114,7 +114,7 @@ class SignUpModal extends React.Component {
       <div>
       
         <Button
-          // variant="outlined"
+          variant="outlined"
           required fullWidth
            
        
