@@ -48,9 +48,99 @@ export default {
       console.log(data.resumeBody);
       console.log(data.jobDescription);
 
+      var badWords = ["with", "have", "also", "inform"];
+      var badWordsMap = {};
+      badWords.forEach(function(a) { badWordsMap[a] = 1});
+    
+    
+      
+      function wordCheck(word){
+        return badWordsMap[word] ? true : false;
+      }
+    
+    
+      // first function
+      function countWords(str) {
+        var result = {};
+        var str1 = str.toLowerCase();
+        var stringArray = str1.split(  /[.<|/>,;' !-?!$%&^"●)(_#.\s]+/g);
+        for (var i = 0; i < stringArray.length; i++) {
+          if (wordCheck(stringArray[i])) {
+            console.log("bad Word");
+          }
+        }
+        if (str1.length === 0) {
+          return {};
+        } else {
+          for (var i = 0; i < stringArray.length; i++) {
+                var keyLength = stringArray[i].length;
+                var key = stringArray[i];
+            if (result[key]) {
+              result[key]++;		
+            } else if (keyLength < 3){
+              delete result[key];
+            } else {
+              result[key] = 1;
+            }
+          }
+          }
+          return result; 
+        }
+      
+      // first function call
+      var resumeObject = countWords(data.resumeBody);
+    
+     // second function call
+      var jdObject = countWords(data.jobDescription);
+    
+      var resumeWordCount = data.resumeBody.length;
+      
+      // second function
+      function extend(resumeObject, jdObject) {
+      for(var i in jdObject){
+        if(!(i in resumeObject)){
+          jdObject[i] +=  ", ❌  keyword missing from resume";
+          resumeObject[i] = jdObject[i];
+        }
+      }
+      return jdObject;
+      }
+    
+      // third function call
+      var total = extend(resumeObject, jdObject);
+    
+       console.log(total)
+    
+    // third function 
+    function addCheckMarkandPercent (total) {
+        var final = {};
+        var percent = 0;
+        var words = 0;
+        var correct = 0;
+          for (var prop in total) {
+            if (total[prop]) {
+                words++;
+            if(typeof total[prop] === 'number'){
+              correct++;
+            //   total[prop] += " ✅";
+            }
+          }
+          }
+          percent = ((correct/words)*100).toFixed(2);
+        
+         
+      final["Score"] = parseFloat(percent);
+      final["Word Count"] = resumeWordCount;
+      return final;
+      }
+    
+      // last function call
+      var output = addCheckMarkandPercent(total);
+      // console.log(output);
 
 
-      return axios.post("/api/algo/", data)
+
+      return output;
     },
 
 
