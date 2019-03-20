@@ -12,7 +12,8 @@ const jobSchema = new Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
   how_to_apply: { type: String, required: false },
-  company_logo: { type: String, required: false }
+  company_logo: { type: String, required: false },
+  user: { type: Schema.Types.ObjectId, ref: 'User'}
 });
 
 const Job = mongoose.model("Job", jobSchema);

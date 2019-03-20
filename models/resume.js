@@ -6,8 +6,8 @@ const resumeSchema=new Schema({
     description:{type: String},
     date: {type: Date, default: Date.now},
     body: {type: String, required: true},
-    user: {type: Schema.Types.ObjectId, ref: "User", required:true}
-})
+    user: {type: Schema.Types.ObjectId, ref: "User"}
+});
 
 const Resume = mongoose.model("Resume", resumeSchema);
 

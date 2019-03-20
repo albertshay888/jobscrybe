@@ -11,13 +11,14 @@ const UserSchema = new Schema({
       },
       password: {
         type: String,
-        required: true
+        required: true  
       },
       date: {
         type: Date,
         default: Date.now
       },
-      resumes: [{type: Schema.Types.ObjectId, ref: "Resume"}]
+      resume: [{type: Schema.Types.ObjectId, ref: "Resume"}],
+      job: [{type: Schema.Types.ObjectId, ref: "Job"}]
 });
 
 

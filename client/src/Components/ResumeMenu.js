@@ -115,7 +115,7 @@ class SimpleSelect extends React.Component {
         </Grid>
         <Grid item sm={2}>
                 <Button onClick={this.calculateAlgo} color="primary">
-                  Jobify
+                  Scrybe
                 </Button>
         </Grid>
 
