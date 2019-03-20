@@ -137,7 +137,7 @@ class CopyPasteModal extends React.Component {
                 </form>
               </Grid>
 
-              <Grid item md={12}>
+              <Grid item md={12}> 
                 <Button
                   
                   variant="outlined"
@@ -145,7 +145,16 @@ class CopyPasteModal extends React.Component {
                   fullWidth
                   onClick = { this.handleSubmit }
                 >
-                  Save to my Resumes
+                  Save to Resumes
+                </Button>
+              </Grid>
+              <Grid item md={12}>
+                <Button 
+                  variant="outlined"
+                  onClick={this.handleClose} 
+                  fullWidth
+                  color="primary">
+                  Cancel
                 </Button>
               </Grid>
             </Grid>
