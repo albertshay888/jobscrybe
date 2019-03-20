@@ -62,6 +62,7 @@ export default {
       // first function
       function countWords(str) {
         var result = {};
+        
         var str1 = str.toLowerCase();
         var stringArray = str1.split(  /[.<|/>,;' !-?!$%&^"●)(_#.\s]+/g);
         for (var i = 0; i < stringArray.length; i++) {
@@ -87,15 +88,12 @@ export default {
           return result; 
         }
       
-      // first function call
-      var resumeObject = countWords(data.resumeBody);
-    
-     // second function call
-      var jdObject = countWords(data.jobDescription);
-    
       var resumeWordCount = data.resumeBody.length;
-      
-      // second function
+      var resumeObject = countWords(data.resumeBody);
+      // console.log(resumeObject);
+      var jdObject = countWords(data.jobDescription);
+      // console.log(jdObject);
+    
       function extend(resumeObject, jdObject) {
       for(var i in jdObject){
         if(!(i in resumeObject)){
@@ -106,14 +104,13 @@ export default {
       return jdObject;
       }
     
-      // third function call
+    
       var total = extend(resumeObject, jdObject);
+    //   var totalList = extend(resumeObject, jdObject);
     
-       console.log(total)
     
-    // third function 
-    function addCheckMarkandPercent (total) {
-        var final = {};
+      function addCheckMarkandPercent (total) {
+        var final = [];
         var percent = 0;
         var words = 0;
         var correct = 0;
@@ -122,24 +119,22 @@ export default {
                 words++;
             if(typeof total[prop] === 'number'){
               correct++;
-            //   total[prop] += " ✅";
+    
+              total[prop] += " ✅";
+    
             }
           }
           }
-          percent = ((correct/words)*100).toFixed(2);
-        
-         
-      final["Score"] = parseFloat(percent);
-      final["Word Count"] = resumeWordCount;
+          percent = parseFloat((correct/words)*100).toFixed(2);
+    
+      final.push("JOB DESCRIPTION MATCH RATE: " + percent + "%! ");
+      final.push("RESUME WORD COUNT: " + resumeWordCount + " words");
+      final.push("KEYWORD COMPAIRISON RESULT:");
+      final.push(total);
       return final;
       }
-    
-      // last function call
       var output = addCheckMarkandPercent(total);
-      // console.log(output);
-
-
-
+      console.log(output);
       return output;
     },
 
