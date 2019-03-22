@@ -96,6 +96,10 @@ class SignUpModal extends React.Component {
         if(resp.status===200){
           //this closes the modal after sign up is complete!
  this.setState({ open: false });
+        }else{
+          if(resp.status===401){
+            alert('user already here!')
+          }
         }
         // window.location.href = "/main" 
       })
