@@ -61,8 +61,8 @@ class SignIn extends React.Component{
   handleSubmit = event=>{
     event.preventDefault();
     console.log(this.state.email, this.state.password);
-    if(!this.state.user||!this.state.password){
-      alert("Fields are incomplete, please enter your name and password");
+    if(!this.state.email||!this.state.password){
+      alert("Fields are incomplete or incorrect, please re-enter your Email and password");
     } else{
       // console.log("poop");
       API.logIn({

@@ -119,7 +119,7 @@ class SignUp extends React.Component{
         console.log(resp)
         if(resp.status===200){
          //this closes the modal after sign up is complete!
- this.setState({ open: false });
+            this.setState({ open: false });
         }
         // window.location.href = "/main" 
       })
