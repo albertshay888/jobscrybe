@@ -10,6 +10,9 @@ https://safe-dawn-59840.herokuapp.com
 ## Video:
 https://www.youtube.com/watch?v=FKhIoc6kIEc
 
+## Screenshots:
+
+
 ## Technogies used:
 -	React
 -	React router DOM
