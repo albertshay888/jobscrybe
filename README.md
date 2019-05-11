@@ -10,8 +10,9 @@ https://www.youtube.com/watch?v=FKhIoc6kIEc
 
 ## Screenshots:
 ![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif)
-![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png)
 
+<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png" width="750" height="250" />
+![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/mobile.png)
 
 
 ## Technogies used:
