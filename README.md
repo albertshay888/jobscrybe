@@ -8,9 +8,11 @@ https://safe-dawn-59840.herokuapp.com/
 ## Video:
 https://www.youtube.com/watch?v=FKhIoc6kIEc
 
-## Screenshots:
-<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif" align="center" width="310" height="580" />
+### Mobile Screenshots:
+<img align="center" src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif"  width="310" height="580" />
 <img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/mobile.png" width="1200" height="400" />
+
+### Desktop Screenshots:
 <img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png" width="1200" height="550" />
 
 ## Technogies used:
