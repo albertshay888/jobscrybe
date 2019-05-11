@@ -8,23 +8,20 @@ This app will provide users with a job match score based on their resume, indica
 ## Demo:
 https://safe-dawn-59840.herokuapp.com/
 
-### Preview:
+## Preview:
 <img align="center" src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif"  width="310" height="580" />
 
-### Mobile Screenshots:
+## Mobile Screenshots:
 <img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/mobile.png" width="1200" height="400" />
 
-### Desktop Screenshots:
+## Desktop Screenshots:
 <img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png" width="1200" height="550" />
 
-### Video:
-https://www.youtube.com/watch?v=FKhIoc6kIEc
-
-### TEAM:
+## TEAM:
   - __Product Owner__:  Albert Shay
   - __Development Team Members__:  Nick Morales, Israel Buenrostro
 
-### Technogies used:
+## Technogies used:
 -	React
 -	React router DOM
 -	Materialize UI
