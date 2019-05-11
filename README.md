@@ -9,10 +9,10 @@ https://safe-dawn-59840.herokuapp.com/
 https://www.youtube.com/watch?v=FKhIoc6kIEc
 
 ## Screenshots:
-![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png)
 ![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif)
-![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/1form.jpg)
-![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/2search.jpg)
+![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png)
+
+
 
 ## Technogies used:
 -	React
