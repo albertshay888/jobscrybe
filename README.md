@@ -9,9 +9,9 @@ https://safe-dawn-59840.herokuapp.com/
 https://www.youtube.com/watch?v=FKhIoc6kIEc
 
 ## Screenshots:
-<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif" align="left" width="310" height="580" />
-<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/mobile.png" width="1000" height="350" />
-<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png" width="1000" height="450" />
+<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif" align="center" width="310" height="580" />
+<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/mobile.png" width="1100" height="350" />
+<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png" width="1100" height="450" />
 
 ## Technogies used:
 -	React
