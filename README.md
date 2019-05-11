@@ -17,7 +17,7 @@ https://safe-dawn-59840.herokuapp.com/
 ## Desktop Screenshots:
 <img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png" width="1200" height="550" />
 
-## TEAM:
+## Development Team:
   - __Product Owner__:  Albert Shay
   - __Development Team Members__:  Nick Morales, Israel Buenrostro
 
