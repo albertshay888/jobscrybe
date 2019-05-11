@@ -9,10 +9,10 @@ https://safe-dawn-59840.herokuapp.com/
 https://www.youtube.com/watch?v=FKhIoc6kIEc
 
 ## Screenshots:
-![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif)
+<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif" width="280" height="650" />
 
-<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png" width="750" height="250" />
-![](https://github.com/albertshay888/jobscrybe/blob/master/screenshots/mobile.png)
+<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/final.png" width="950" height="350" />
+<img src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/mobile.png" width="950" height="350" />
 
 
 ## Technogies used:
