@@ -73,7 +73,7 @@ class SearchForm extends React.Component{
                 <Grid container spacing={12} justify="flex-end">
                     <Grid item xs={6}>
                         <FormControl fullWidth margin="normal">
-                            <InputLabel htmlFor="search">🔍 Job Title or Keywords</InputLabel>
+                            <InputLabel htmlFor="search">🔍 Job Title</InputLabel>
                             <Input value={this.state.search} onChange={this.handleChange} id="search" name="search" autoFocus />
                         </FormControl>
                     </Grid>
