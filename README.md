@@ -1,4 +1,4 @@
-## Jobscrybe: A job board that analyzes how well your resume matches a particular job with just one click!
+## A job board that analyzes how well your resume matches a particular job with just one click!
 
 Jobscrybe is a full-stack web application that allows you to search for jobs with the ability to analyze how well your resume matches that job with just one click. https://www.youtube.com/watch?v=FKhIoc6kIEc.
 
