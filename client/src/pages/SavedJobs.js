@@ -96,10 +96,10 @@ class SavedJobs extends React.Component {
             <div className={classes.heroContent}>
             
               <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                Saved Jobs
+                Popular Jobs
             </Typography>
               <Typography variant="h6" align="center" color="textSecondary" paragraph>
-                Below you can find all the jobs that you've saved
+                Below you can find all the jobs that have been saved
             </Typography>
               <div className={classes.heroButtons}>
                 <Grid container spacing={16} justify="center">

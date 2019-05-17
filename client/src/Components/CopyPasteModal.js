@@ -104,7 +104,7 @@ class CopyPasteModal extends React.Component {
           height="40px"
   
         
-          onClick={this.handleOpen}>Copy / Paste one here</Button>
+          onClick={this.handleOpen}>Copy / Paste resume here</Button>
         <Modal
           aria-labelledby="title"
           aria-describedby="modal-body"
@@ -129,7 +129,7 @@ class CopyPasteModal extends React.Component {
               <Grid item md={12}>
                 <form>
                   <Typography component="label" variant="h7" align="center" >
-                    Copy / Paste your resume here
+                    Input resume, exclude name and contact information 
                   </Typography>
                   <textarea name="resumeBody" rows="20" cols="31" value={this.state.resumeBody} onChange={this.handleInputChange} >
                  
@@ -145,7 +145,7 @@ class CopyPasteModal extends React.Component {
                   fullWidth
                   onClick = { this.handleSubmit }
                 >
-                  Save to Resumes
+                  Save
                 </Button>
               </Grid>
               <Grid item md={12}>
@@ -154,7 +154,7 @@ class CopyPasteModal extends React.Component {
                   onClick={this.handleClose} 
                   fullWidth
                   color="primary">
-                  Cancel
+                  Close
                 </Button>
               </Grid>
             </Grid>

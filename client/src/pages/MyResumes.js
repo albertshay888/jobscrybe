@@ -131,10 +131,10 @@ class MyResumes extends React.Component{
         <div className={classes.heroUnit}>
           <div className={classes.heroContent}>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Your Resumes
+              Resume Repository
             </Typography>
             <Typography variant="h6" align="center" color="textSecondary" paragraph>
-              Use the space below to organize your personalized resumes
+              Review personalized resumes 
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={16} justify="center">
