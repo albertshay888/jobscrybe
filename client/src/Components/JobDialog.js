@@ -13,12 +13,13 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import Switch from '@material-ui/core/Switch';
 import SaveButton from "./SaveButton"
+
 // import UnsaveButton from "./UnsaveButton"
 // import Dropdown from "./Dropdown";
-
+import ResultList from "./ResultList";
 import ResumeMenu from './ResumeMenu';
 import { Grid } from '@material-ui/core';
-// 
+
 
 
 
@@ -26,7 +27,11 @@ import { Grid } from '@material-ui/core';
 class MaxWidthDialog extends React.Component {
   state = {
     open: false,
+    selected:{},
+    resumes: [],
+    results:[],
     user: this.props.user
+   
   };
 
   grabResume = (value) =>{
@@ -41,7 +46,6 @@ class MaxWidthDialog extends React.Component {
     this.setState({ open: false });
   };
   
-
 
  
 
@@ -74,8 +78,9 @@ class MaxWidthDialog extends React.Component {
             <div className="content" dangerouslySetInnerHTML={{__html: this.props.jobInfo.description}}></div>
             How to apply:
             <div className="content" dangerouslySetInnerHTML={{__html: this.props.jobInfo.how_to_apply}}></div>
+           
             </DialogContentText>
-            
+           
           </DialogContent>
           <DialogActions>
             <Grid container spacing={6}>

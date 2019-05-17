@@ -57,7 +57,7 @@ const styles = theme => ({
 });
 
 
-class MyReusmes extends React.Component{
+class MyResumes extends React.Component{
 
   state={
     resumes:[]
@@ -66,7 +66,30 @@ class MyReusmes extends React.Component{
   componentDidMount(){
     this.getResumes();
   }
+  
+  handleSubmit = event=>{
+    event.preventDefault();
+    if(!this.state.resumes){
+      alert("You can't save a blank resume!");
+    } else{
+      console.log(this.props.user)
+      API.addResume({
+        resumes: this.state.resumes
+      })
+      .then(resp=>{
+        console.log(resp)
+        if(resp.status===200){
+            console.log("resume added!")
+        //   this.props.history.push("/main")
+        }
+      })
 
+      .catch(err=>console.log(err));
+      this.setState({
+        resumes: ""
+      })
+    }
+  }
   // getResumes= ()=>{
   //   API.getResumes(this.props.user)
   //   .then(resp=>{
@@ -116,9 +139,23 @@ class MyReusmes extends React.Component{
             <div className={classes.heroButtons}>
               <Grid container spacing={16} justify="center">
                 <Grid item>
-                  <Button disabled variant="contained" color="primary">
-                    Upload a resume here
-                  </Button>
+   
+
+<Button
+  variant="contained"
+  color="primary"
+  component="label"
+  // onClick = { this.handleSubmit }
+>
+  Upload a resume here
+  <input
+    type="file"
+    style={{ display: "none" }}
+    user = {this.props.user } 
+    reloadResumes={this.getResumes} 
+  />
+</Button>
+                  
                 </Grid>
                 <Grid item>
                     <CopyPasteModal user = {this.props.user } reloadResumes={this.getResumes} />
@@ -172,8 +209,8 @@ class MyReusmes extends React.Component{
 }
 
 
-MyReusmes.propTypes = {
+MyResumes.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MyReusmes);
+export default withStyles(styles)(MyResumes);

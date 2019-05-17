@@ -13,6 +13,7 @@ import Select from '@material-ui/core/Select';
 import API from '../utils/API';
 import Grid from "@material-ui/core/Grid"
 import Button from "@material-ui/core/Button"
+import ResultList from './ResultList';
 
 const styles = theme => ({
   root: {
@@ -32,6 +33,7 @@ class SimpleSelect extends React.Component {
   state = {
     selected:{},
     resumes: [],
+    results:null,
   };
 
   handleInputChange = event => {
@@ -44,21 +46,25 @@ class SimpleSelect extends React.Component {
  
 
 
-  calculateAlgo = () => {
+  calculateAlgo = (algoData) => {
     let resumeBody = this.state.selected.body;
     let jobDescription = this.props.jobInfo.description;
 
-    let algoData = {
+    algoData = {
       resumeBody: resumeBody,
       jobDescription: jobDescription
     }
 
-    console.log(algoData)
+    // console.log(algoData)
 
-    API.calculateAlgo(algoData, resp=>{
-      console.log(resp)
+    API.calculateAlgo(algoData, output=>{
+
+      this.setState({results:output})
+
     })
+  
   }
+
 
   handleSubmit = event=>{
     event.preventDefault();
@@ -66,7 +72,7 @@ class SimpleSelect extends React.Component {
     if(!this.state.selected){
       alert("Select a resume");
     }
-    else this.calculateAlgo(this.state)
+    else this.setState(API.calculateAlgo(this.state))
   }
 
 
@@ -86,11 +92,16 @@ class SimpleSelect extends React.Component {
     this.setState({hold: event.target.value})
     console.log(this.state.hold)
   };
+  
+
+
+  
 
   render() {
     const { classes } = this.props;
 
     return (
+   
       <form className={classes.root} autoComplete="off">
 
       <Grid container>
@@ -116,17 +127,26 @@ class SimpleSelect extends React.Component {
           </Select>
         </FormControl>
         </Grid>
+
         <Grid item sm={2}>
                 <Button onClick={this.calculateAlgo} color="primary">
                   Scrybe
                 </Button>
+              
+               
         </Grid>
 
       </Grid>
-      
+   
       </form>
+      
+ 
+
+ 
     );
+    
   }
+  
 }
 
 
