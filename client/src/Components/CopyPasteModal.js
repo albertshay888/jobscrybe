@@ -129,10 +129,9 @@ class CopyPasteModal extends React.Component {
               <Grid item md={12}>
                 <form>
                   <Typography component="label" variant="h7" align="center" >
-                    Input resume, exclude name and contact information 
+                    Paste resume below, exclude name and contact information 
                   </Typography>
                   <textarea name="resumeBody" rows="20" cols="31" value={this.state.resumeBody} onChange={this.handleInputChange} >
-                 
                   </textarea>
                 </form>
               </Grid>

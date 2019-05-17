@@ -101,6 +101,7 @@ class SignIn extends React.Component{
   render(){
     const {classes} = this.props;
     return(
+      <div className="landing">
       <main className={classes.main}>
       <CssBaseline />
       <Paper className={classes.paper}>
@@ -142,6 +143,7 @@ class SignIn extends React.Component{
       <div><SignUpModal /> </div>
       </Paper>
     </main>
+    </div>
     )
   }
 

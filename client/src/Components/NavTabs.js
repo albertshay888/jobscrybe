@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -76,7 +77,7 @@ class NavTabs extends React.Component {
             <Tabs position="fixed" variant="fullWidth" value={value} onChange={this.handleChange}>
               {/* <img width="16%" src={logo} href="../pages/Search"/>  */}
               <LinkTab label="Search" href="../pages/Search" />
-              <LinkTab label="Popular" href="../SavedJobs" />
+              <LinkTab label="Saved" href="../SavedJobs" />
               <LinkTab label="Resumes" href="../pages/MyResumes" />
               {/* <LinkTab label="Profile" href="../pages/Profile" /> */}
               <LinkTab label="Logout" href="Logout" />

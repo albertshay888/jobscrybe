@@ -655,7 +655,7 @@ export default {
       function extend(resumeObject, jdObject) {
       for(var i in jdObject){
         if(!(i in resumeObject)){
-          jdObject[i] +=  ", ❌  keyword missing from resume";
+          jdObject[i] +=  ", ❌ missing from resume";
           resumeObject[i] = jdObject[i];
         }
       }
@@ -685,14 +685,22 @@ export default {
           }
           percent = parseFloat((correct/words)*100).toFixed(2);
     
-      final.push("JOB MATCH RATE SCORE: " + percent + "%!" +  "\n");
-      final.push("RESUME WORD COUNT: " + resumeWordCount + "\n");
-      final.push("KEYWORD RESULT: \n");
+      final.push("JOB MATCH RATE SCORE 📈: " + percent + "％" +  "\n");
+      if (percent < 70) {
+        alert(`Add missing keywords to resume to improve match rate to at least 70% 📌!
+       `);
+      } else {
+        alert(`Match rate is 70% and above, apply with this resume 👍!`)
+      }
+      final.push("RESUME WORD COUNT 📝: " + resumeWordCount + " words" + "\n");
+      final.push("SCORE REPORT 📊: \n");
       final.push(JSON.stringify(total));
       return final;
       }
       var output = addCheckMarkandPercent(total);
+      // alert(`Add the missing keywords to your resume to improve your match rate`);
       alert(output);
+
       console.log(output);
       
       // return axios.post("/api/algo", output);
