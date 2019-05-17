@@ -134,7 +134,7 @@ class MyResumes extends React.Component{
               Resume Repository
             </Typography>
             <Typography variant="h6" align="center" color="textSecondary" paragraph>
-              Review personalized resumes 
+              Review personalized resumes anonomously 
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={16} justify="center">

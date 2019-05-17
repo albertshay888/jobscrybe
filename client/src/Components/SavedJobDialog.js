@@ -60,7 +60,7 @@ class MaxWidthDialog extends React.Component {
              Remove!
               </UnsaveButton> */}
             <Button onClick={this.calculateAlgo} color="primary">
-              Jobify
+              Scrybe
             </Button>
             <Button onClick={this.handleClose} color="primary">
               Close
