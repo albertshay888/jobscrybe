@@ -70,7 +70,7 @@ class NavTabs extends React.Component {
     return (
       <div class="navbar-fixed">
       <br/>
-      <img width="40%" src={logo} href="../pages/Search"/> 
+      <img id="logoPic" width="40%" src={logo} href="../pages/Search"/> 
       <br/>
       <nav>
         <div class="nav-wrapper" className={classes}>

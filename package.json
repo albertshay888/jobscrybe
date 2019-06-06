@@ -6,7 +6,7 @@
   "author": "Albert Shay, Nick Morales, Isreal P. Buenrostro",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "git://github.com/axios/axios.git#f28ff93",
     "bcrypt-nodejs": "^0.0.3",
     "cors-anywhere": "^0.4.1",
     "express": "^4.16.4",
@@ -16,7 +16,6 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "prop-types": "^15.6.2"
-   
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
