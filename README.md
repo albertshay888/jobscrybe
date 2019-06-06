@@ -25,11 +25,13 @@ https://jobscrybe.herokuapp.com/
 -	React
 -	React router DOM
 -	Materialize UI
+-	Axios
 -	Github Jobs API
+- Node
 -	Express
 -	Mongoose
 -	Passport
--	Axios
+- Node
 -	MongoDB
 
 
