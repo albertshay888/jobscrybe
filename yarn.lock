@@ -122,10 +122,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-"axios@git://github.com/axios/axios.git#f28ff93":
+"axios@^0.19:
   version "0.19.0-beta.1"
   uid f28ff933e491ad7b1dd77af6ad3abe126109bd9e
-  resolved "git://github.com/axios/axios.git#f28ff933e491ad7b1dd77af6ad3abe126109bd9e"
+
   dependencies:
     follow-redirects "1.5.10"
     is-buffer "^2.0.2"
