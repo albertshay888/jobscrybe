@@ -8,6 +8,7 @@ This app will provide users with a job match score based on their resume, indica
 ## Demo:
 https://jobscrybe.herokuapp.com/
 
+
 ## Preview:
 <img align="center" src="https://github.com/albertshay888/jobscrybe/blob/master/screenshots/jobscrybe2.gif"  width="310" height="580" />
 
