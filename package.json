@@ -6,7 +6,7 @@
   "author": "Albert Shay, Nick Morales, Isreal P. Buenrostro",
   "license": "MIT",
   "dependencies": {
-    "axios": "0.19"
+    "axios": ">=0.21.1"
     "bcrypt-nodejs": "^0.0.3",
     "cors-anywhere": "^0.4.1",
     "express": "^4.16.4",
